@@ -9,9 +9,9 @@ Security Policy หรือนโยบายความปลอดภัย 
 1. เปิดเว็บเบราว์เซอร์ และล็อกอินเข้าสู่ระบบ
 2. ไปที่ Policy > Security Policy > Add Security Policy
 
-![security-policy-1](/docs/assets/image/security-policy-1.png)
+![security-policy-1](/assets/image/security-policy-1.png)
 
-![security-policy-2](/docs/assets/image/security-policy-2.png)
+![security-policy-2](/assets/image/security-policy-2.png)
 
 🛠️ 1. General Settings
 
@@ -91,6 +91,6 @@ Security Policy หรือนโยบายความปลอดภัย 
 - Service: ICMP
 - Action: Permit
 
-![security-policy-3](/docs/assets/image/security-policy-3.png)
+![security-policy-3](/assets/image/security-policy-3.png)
 
 > Test: Client ใช้คำสั่ง Ping ไปยัง 8.8.8.8 หากมีการตอบกลับมาแสดงว่ากำหนดค่านโยบายสำเร็จ
