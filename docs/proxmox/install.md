@@ -1,31 +1,69 @@
-# Proxmox
+# คู่มือการติดตั้ง Proxmox VE 7.4
 
-### ขั้นตอนการติดตั้ง Proxmox VE 7.4
+คู่มือนี้จะแนะนำขั้นตอนการติดตั้ง **Proxmox VE (Virtual Environment) เวอร์ชัน 7.4** อย่างละเอียด เพื่อให้คุณสามารถติดตั้งระบบได้อย่างถูกต้องและรวดเร็ว
 
-1. เลือก Install Proxmox VE จากนั้นกดปุ่ม Enter
+---
 
-![proxmox-install-1](/docs/assets/proxmox-install-1.png)
+## ขั้นตอนการติดตั้ง Proxmox VE 7.4
 
-2. คลิกปุ่ม I agree เพื่อยอมรับข้อตกลงในการใช้งาน
+### 1\. เริ่มต้นการติดตั้ง Proxmox VE
 
-![proxmox-install-2](/docs/assets/proxmox-install-2.png)
+หลังจากบูตเครื่องด้วยสื่อการติดตั้ง Proxmox VE (USB หรือ DVD) คุณจะพบกับหน้าจอเริ่มต้นการติดตั้ง
 
-3. เลือก Storage ที่ต้องการติดตั้ง จากนั้นคลิกปุ่ม Next
+- เลือก **`Install Proxmox VE`**
+- กดปุ่ม **`Enter`** เพื่อดำเนินการต่อ
 
-![proxmox-install-3](/docs/assets/proxmox-install-3.png)
+![proxmox-install-1](/docs/assets/image/proxmox-install-1.png)
 
-4. เลือก Time zone จากนั้นคลิกปุ่ม `Next`
+### 2\. ยอมรับข้อตกลงการใช้งาน
 
-![proxmox-install-4](/docs/assets/proxmox-install-4.png)
+อ่านข้อตกลงการใช้งาน (End-User License Agreement) อย่างละเอียด
 
-5. กรอกรหัสผ่าน และอีเมล (หากไม่ต้องการใส่อีเมลส่วนตัวให้ระบุเป็น: `mail@example.local`)
+- คลิกปุ่ม **`I agree`** เพื่อยอมรับข้อตกลงและไปยังขั้นตอนถัดไป
 
-![proxmox-install-5](/docs/assets/proxmox-install-5.png)
+![proxmox-install-2](/docs/assets/image/proxmox-install-2.png)
 
-6. ตั้งค่า Hostname, และ IP address ที่ต้องการ (ห้ามลบ `.localdomain` ออกเด็ดขาด มิเช่นนั้นจะไม่สามารถไปขั้นตอนถัดไปได้)
+### 3\. เลือก Storage สำหรับการติดตั้ง
 
-![proxmox-install-6](/docs/assets/proxmox-install-6.png)
+เลือกดิสก์หรือพื้นที่จัดเก็บ (Storage) ที่คุณต้องการใช้ติดตั้งระบบปฏิบัติการ Proxmox VE
 
-7. ตรวจสอบการตั้งค่า จากนั้นคลิก `Install`
+- คลิกปุ่ม **`Next`** เพื่อดำเนินการต่อ
 
-![proxmox-install-7](/docs/assets/proxmox-install-7.png)
+![proxmox-install-3](/docs/assets/image/proxmox-install-3.png)
+
+### 4\. กำหนด Time Zone
+
+เลือกเขตเวลา (Time zone) ที่ถูกต้องสำหรับตำแหน่งที่ตั้งของคุณ เพื่อให้เวลาของระบบถูกต้องและสอดคล้องกัน
+
+- คลิกปุ่ม **`Next`**
+
+![proxmox-install-4](/docs/assets/image/proxmox-install-4.png)
+
+### 5\. กำหนดรหัสผ่านและอีเมล
+
+ตั้งค่ารหัสผ่านสำหรับบัญชีผู้ดูแลระบบ (root) และระบุอีเมล
+
+- **รหัสผ่าน:** กรอกรหัสผ่านที่คุณต้องการใช้สำหรับบัญชี root
+- **อีเมล:** กรอกอีเมลของคุณ หากไม่ต้องการใช้อีเมลส่วนตัว สามารถระบุเป็น **`mail@example.local`** ได้
+
+![proxmox-install-5](/docs/assets/image/proxmox-install-5.png)
+
+### 6\. กำหนดค่าเครือข่าย
+
+ตั้งค่า Hostname และ IP Address สำหรับเซิร์ฟเวอร์ Proxmox VE ของคุณ
+
+- **Hostname:** กำหนดชื่อโฮสต์สำหรับเซิร์ฟเวอร์ของคุณ
+- **IP Address:** ระบุ IP Address ที่ต้องการใช้
+- **สำคัญ:** **ห้ามลบ `.localdomain` ออกเด็ดขาด** หากลบออกจะทำให้ไม่สามารถดำเนินการไปยังขั้นตอนถัดไปได้
+
+![proxmox-install-6](/docs/assets/image/proxmox-install-6.png)
+
+### 7\. ตรวจสอบและเริ่มการติดตั้ง
+
+ตรวจสอบการตั้งค่าทั้งหมดที่คุณได้กำหนดไว้ในขั้นตอนก่อนหน้าให้ถูกต้อง
+
+- เมื่อแน่ใจว่าข้อมูลทั้งหมดถูกต้องแล้ว คลิกปุ่ม **`Install`** เพื่อเริ่มกระบวนการติดตั้ง Proxmox VE
+
+![proxmox-install-7](/docs/assets/image/proxmox-install-7.png)
+
+---
