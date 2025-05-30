@@ -44,4 +44,6 @@ curl -sSL https://download.technitium.com/dns/install.sh | sudo bash
 http://<ip_address>:5380
 ```
 
+![technitium-setup-1](/assets/image/technitium-setup-1.png)
+
 > **ตัวอย่าง:** หาก IP Address ของเซิร์ฟเวอร์ของคุณคือ `192.168.1.100` ให้พิมพ์ `http://192.168.1.100:5380` ในเว็บบราวเซอร์ของคุณ

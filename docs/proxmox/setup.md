@@ -13,7 +13,7 @@
 - เลือก **`Install Proxmox VE`**
 - กดปุ่ม **`Enter`** เพื่อดำเนินการต่อ
 
-![proxmox-install-1](/assets/image/proxmox-install-1.png)
+![proxmox-setup-1](/assets/image/proxmox-setup-1.png)
 
 ### 2\. ยอมรับข้อตกลงการใช้งาน
 
@@ -21,7 +21,7 @@
 
 - คลิกปุ่ม **`I agree`** เพื่อยอมรับข้อตกลงและไปยังขั้นตอนถัดไป
 
-![proxmox-install-2](/assets/image/proxmox-install-2.png)
+![proxmox-setup-2](/assets/image/proxmox-setup-2.png)
 
 ### 3\. เลือก Storage สำหรับการติดตั้ง
 
@@ -29,7 +29,7 @@
 
 - คลิกปุ่ม **`Next`** เพื่อดำเนินการต่อ
 
-![proxmox-install-3](/assets/image/proxmox-install-3.png)
+![proxmox-setup-3](/assets/image/proxmox-setup-3.png)
 
 ### 4\. กำหนด Time Zone
 
@@ -37,7 +37,7 @@
 
 - คลิกปุ่ม **`Next`**
 
-![proxmox-install-4](/assets/image/proxmox-install-4.png)
+![proxmox-setup-4](/assets/image/proxmox-setup-4.png)
 
 ### 5\. กำหนดรหัสผ่านและอีเมล
 
@@ -46,7 +46,7 @@
 - **รหัสผ่าน:** กรอกรหัสผ่านที่คุณต้องการใช้สำหรับบัญชี root
 - **อีเมล:** กรอกอีเมลของคุณ หากไม่ต้องการใช้อีเมลส่วนตัว สามารถระบุเป็น **`mail@example.local`** ได้
 
-![proxmox-install-5](/assets/image/proxmox-install-5.png)
+![proxmox-setup-5](/assets/image/proxmox-setup-5.png)
 
 ### 6\. กำหนดค่าเครือข่าย
 
@@ -56,7 +56,7 @@
 - **IP Address:** ระบุ IP Address ที่ต้องการใช้
 - **สำคัญ:** **ห้ามลบ `.localdomain` ออกเด็ดขาด** หากลบออกจะทำให้ไม่สามารถดำเนินการไปยังขั้นตอนถัดไปได้
 
-![proxmox-install-6](/assets/image/proxmox-install-6.png)
+![proxmox-setup-6](/assets/image/proxmox-setup-6.png)
 
 ### 7\. ตรวจสอบและเริ่มการติดตั้ง
 
@@ -64,6 +64,6 @@
 
 - เมื่อแน่ใจว่าข้อมูลทั้งหมดถูกต้องแล้ว คลิกปุ่ม **`Install`** เพื่อเริ่มกระบวนการติดตั้ง Proxmox VE
 
-![proxmox-install-7](/assets/image/proxmox-install-7.png)
+![proxmox-setup-7](/assets/image/proxmox-setup-7.png)
 
 ---
